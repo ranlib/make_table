@@ -17,6 +17,10 @@ task task_make_table {
     String EMB = read_string("EMB")
     String INH = read_string("INH")
   }
+  
+  runtime {
+    docker: "ubuntu:22.04"
+  }
 }
 
 workflow wf_make_table {
@@ -34,4 +38,5 @@ workflow wf_make_table {
     String EMB = task_make_table.EMB
     String SAMPLEID = task_make_table.SAMPLEID
   }
+
 }
