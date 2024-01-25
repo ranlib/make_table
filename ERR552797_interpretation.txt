@@ -1,0 +1,6 @@
+Sample ID	Drug	Variant	Interpretation
+ERR552797	INH	katG_p.Arg463Leu	INH-S
+ERR552797	RIF	No reportable variant detected	Review coverage
+ERR552797	PZA	pncA_p.His57Asp	PZA-R
+ERR552797	FQ	No reportable variant detected	Review coverage
+ERR552797	EMB	embB_p.Glu378Ala	EMB-S
