@@ -14,7 +14,8 @@ task task_pivot_table {
     inpf = sys.argv[1]
     outf = sys.argv[2]
     d = pandas.read_csv(inpf, sep='\t')
-    dp = d.pivot(index='Sample ID', columns='Drug', values='Variant')
+    d['Variant_Interpretation'] = d['Variant'] + ' (' + d['Interpretation'] + ')'
+    dp = d.pivot(index='Sample ID', columns='Drug', values='Variant_Interpretation')
     dp = dp.reset_index()
     dp = dp.rename(columns={'Sample ID': 'entity:Sample_id'})
     dp.to_csv(outf, sep='\t', index=False)
