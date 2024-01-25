@@ -1,2 +1,5 @@
 # make_table
-example for creating table output in wdl for terra.bio
+Example of a wdl script that pivots a tsv file.
+
+See run.sh for how to run the example.
+
